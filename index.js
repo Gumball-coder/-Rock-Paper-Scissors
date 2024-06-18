@@ -47,9 +47,6 @@ let countClicks = 0;
 
 function play(){
 
-document.getElementById("cChoice").innerHTML = `Computer chose: ${cnum}`;
-document.getElementById("Results").innerHTML = `Score -> User: ${userScore} Computer: ${computerScore}`;
-
     if(countClicks  === Number(rounds)){
         if(userScore > computerScore){
             alert(`Congrats, You Won!\nxUser: ${userScore} vs. Computer: ${computerScore}`);
@@ -77,6 +74,9 @@ document.getElementById("Results").innerHTML = `Score -> User: ${userScore} Comp
 console.log("User choice: "+ choice);
 
 let cnum = getComputerChoice();
+
+document.getElementById("cChoice").innerHTML = `Computer chose: ${cnum}`;
+document.getElementById("Results").innerHTML = `Score -> User: ${userScore} Computer: ${computerScore}`;
 
 console.log("Computer choice: " + cnum);
 
