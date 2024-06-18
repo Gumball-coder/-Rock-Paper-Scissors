@@ -49,7 +49,7 @@ function play(){
 
     if(countClicks  === Number(rounds)){
         if(userScore > computerScore){
-            alert(`Congrats, You Won!\nxUser: ${userScore} vs. Computer: ${computerScore}`);
+            alert(`Congrats, You Won!\nUser: ${userScore} vs. Computer: ${computerScore}`);
         }
         else if(userScore < computerScore){
             alert(`Sorry, You Lost!\nUser: ${userScore} vs. Computer: ${computerScore}`);
