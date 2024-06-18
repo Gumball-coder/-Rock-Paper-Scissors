@@ -49,13 +49,13 @@ function play(){
 
     if(countClicks  === Number(rounds)){
         if(userScore > computerScore){
-            alert(`Congrats, You Won!\n User: ${userScore} vs. Computer: ${computerScore}`);
+            alert(`Congrats, You Won!\nUser: ${userScore} vs. Computer: ${computerScore}`);
         }
         else if(userScore < computerScore){
-            alert(`Sorry, You Lost!\n User: ${userScore} vs. Computer: ${computerScore}`);
+            alert(`Sorry, You Lost!\nUser: ${userScore} vs. Computer: ${computerScore}`);
         }
         else{
-            alert(`You Tied!\n User: ${userScore} vs. Computer: ${computerScore}`);
+            alert(`You Tied!\nUser: ${userScore} vs. Computer: ${computerScore}`);
         }
         document.getElementById('Submit').disabled = true;
         return;
@@ -76,6 +76,9 @@ console.log("User choice: "+ choice);
 let cnum = getComputerChoice();
 
 console.log("Computer choice: " + cnum);
+
+document.getElementById("cChoice").innerHTML = `Computer chose: ${cnum}`;
+document.getElementById("Results").innerHTML = `Score -> User: ${userScore} Computer: ${computerScore}`;
 
 console.log('Winner: '+ winner(cnum, choice));
 
